@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+
+   <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style type="text/css">
+         
+
+        body{
+            background-color: #f1f2f3;
+            text-align: center;
+
+        }
+        .btn:hover{
+            color: white;
+            background-color: blue;
+        }
+         input{
+         	width: 100%
+         	padding: 0px 10px;
+         	margin: 3px 23px;
+         }
+         .container {
+             max-width: 567px;
+         }
+
+         
+
+table, th, td 
+     {
+  border: 1px solid black;
+  border-collapse: collapse;
+     }
+
+th, td {
+  padding: 3px;
+  text-align: left;
+}
+ tr:nth-child(even) {
+  background-color: #eee;
+}
+ tr:nth-child(odd) {
+ background-color: #fff;
+}
+ th {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+input{
+	margin: 5px 7px;
+}
+
+
+
+</style>
+</head>
+
+<body>
+	
+     <div class="container-fluid">
+        <h2>Admin Login</h2>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+      <br><br>
+
+      <input type="password" placeholder="Enter Password" name="psw" required><br><br>
+        
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label><br>
+
+      <button type="submit">login</button><br>
+    </div><br><br>
+
+     ***************************
+
+     <div class="row pr-4 pl-4 d-flex justify-content end align-content-start">
+         <button type="button" class="btn btn-dark col-md-2">Group Detail </button>
+         <button type="button" class="btn btn-dark col-md-2">Main Stream  </button>
+         <button type="button" class="btn btn-dark col-md-2">Sub Stream  </button>
+         <button type="button" class="btn btn-dark col-md-2">Question  </button>
+         <button type="button" class="btn btn-dark col-md-2">View Student Detail  </button>
+         <button type="button" class="btn btn-dark col-md-1">View Exam Details </button>
+         <button type="button" class="btn btn-dark col-md-1"><a href="projectr.html"> logout </a> </button>
+     </div><br>
+        
+
+
+        <div class="container">
+        	<h1>Group Details</h1>
+        	<br>
+      <label for=""><b>Group Name</b></label>
+      <input type="" placeholder="eg. BSC,BA,Bcom"  required>
+      <br><br>
+            <button type="submit">login</button>
+       </div><br><br>
+
+*******************************
+
+
+
+<div class="container">
+	<div>
+<h3>Add Main Stream</h3><br>
+<table style="width:100%">
+  <tr>
+    <th>Group Name</th>
+    <th>Stream</th> 
+  </tr>
+  <tr>
+    <td>HSC</td>
+    <td>Arts</td>
+  </tr>
+  <tr>
+    <td>HSC</td>
+    <td>Commerce</td>
+  </tr>
+  <tr>
+    <td>HSC</td>
+    <td>Science</td>
+  </tr>
+  <tr>
+    <td>SSC</td>
+    <td>Arts</td>
+  </tr>
+  <tr>
+    <td>SSC</td>
+    <td>Commerce</td>
+  </tr>
+  <tr>
+    <td>SSC</td>
+    <td>Science</td>
+  </tr>
+</table>
+</div>
+
+ <div>                        
+<form>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">SSC</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">HSC</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">BCOM</label>
+</form> 
+
+   <label for=""><b>Stream Name</b></label>
+      <input type="" placeholder="eg. CS,IT"  required>
+      <br><br>
+            <button type="submit">Submit</button>
+       </div><br><br>
+   </div>
+
+**************************************
+
+
+<div class="container">
+<h3>Add Sub Stream</h3><br>
+<table style="width:100%">
+  <tr>
+    <th>Main_ Stream</th>
+    <th>Sub_Stream</th> 
+  </tr>
+  <tr>
+    <td>Arts</td>
+    <td>BOA</td>
+  </tr>
+  <tr>
+    <td>Arts</td>
+    <td>Law</td>
+  </tr>
+</table><br>
+                      
+<form action="/action_page.php">
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">SSC</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">HSC</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">BCOM</label><br>
+
+
+   <label for=""><b>Main Stream</b></label>
+  <select name="cars" id="cars">
+    <option value="Select">-Select-</option>
+    <option value="cs">CS</option>
+  </select><br>
+
+     <label for=""><b>Sub Stream</b></label>
+     <input type="" placeholder="eg. CS,IT"  required><br>
+      <br>
+     <input type="submit" value="Submit">
+</form><br><br>
+</div>
+
+*************************************
+
+
+
+<div class="container">
+<h3>IQ Questions</h3>               
+<form action="/action_page.php">
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">SSC</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">HSC</label>
+  <input type="radio" id="other" name="gender" value="other">
+  <label for="other">BCOM</label>
+</form><br><br>
+ </div>
+
+
+<div class="container">
+   <label for=""><b>Main Stream</b></label>
+  <select name="cars" id="cars">
+    <option value="Select">-Select-</option>
+    <option value="cs">Arts</option>
+    <option value="cs">Science</option>
+    <option value="cs">Commerce</option>
+</select><br><br>
+
+ <label for=""><b>Level</b></label>
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Level 1</label>     
+
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Level 2</label> 
+  <br>
+
+     <label for=""><b>Add Questions</b></label>
+     <input type="" placeholder=""  required><br>
+      <br>
+
+     <label for=""><b>Option 1</b></label>
+     <input type="" placeholder=""  required><br>
+      <br>
+
+     <label for=""><b>Option 2</b></label>
+     <input type="" placeholder=""  required><br>
+      <br>
+
+     <label for=""><b>option 3</b></label>
+     <input type="" placeholder=""  required><br>
+      <br>
+
+     <label for=""><b>Option 4</b></label>
+     <input type="" placeholder=""  required><br>
+      <br>
+
+     <label for=""><b>Answer</b></label>
+     <input type="" placeholder=""  required><br>
+      <br>
+
+           <input type="button" value="Add More Question">
+</div><br><br>
+
+*****************************
+
+
+<div class="container">
+	<h3>View Student Details</h3>
+	<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <th>Mobile Number</th> 
+    <th>Email ID</th>
+    <th>user ID</th>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>7719856312</td>
+    <td>santy@gmail.com</td>
+    <td>101</td>
+  </tr>
+</table>
+</div>
+
+
+***********************************************
+
+<div class="container">
+	<h3>View exam Details</h3><br>
+	<table style="width:100%">
+  <tr>
+    <th>User Name</th>
+    <th>Eexam ID</th> 
+    <th>Total Answer</th>
+    <th>Right Answer</th>
+    <th>Group</th>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+  
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+  <tr>
+    <td>Santy</td>
+    <td>6021</td>
+    <td>1</td>
+    <td>20</td>
+    <td>HSC</td>
+  </tr>
+</table>
+</div>
+
+
+
+
+</div>
+
+
+
+
+</body>
+</html>
